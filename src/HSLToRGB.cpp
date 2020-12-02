@@ -16,6 +16,11 @@ public:
     unsigned char G;
     unsigned char B;
 
+    RGB()
+    {
+        R = G = B = 0;
+    }
+    
     RGB(unsigned char r, unsigned char g, unsigned char b)
     {
         R = r;
@@ -35,6 +40,11 @@ public:
     float H;
     float S;
     float L;
+
+    HSL()
+    {
+        H = S = L = 0;
+    }
 
     HSL(float h, float s, float l)
     {
